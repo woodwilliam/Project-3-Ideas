@@ -1,0 +1,65 @@
+:root {
+    --plight:#E598FF;
+    --pmid: #CE7AEB;
+    --pdark: #87429E;
+    --slimedark: #7A9E33;
+    --slimelight: #C5EB7A;
+    --bluedark: #307F9E;
+    --bluelight: #94D2EB;
+    --brwn: #9E7B54;
+    --tan: #FFDEBA;
+    --darktan: #EBC194;
+    --font: #808080;
+}
+html {
+    font-size: 125%;
+  }
+  body {
+    background: var(--tan);
+  }
+  .card-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 13px;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .card-container:hover .card {
+    opacity: .7;
+    cursor: pointer;
+    filter: grayscale(1);
+  }
+  .card-container .card {
+    margin: 10px;
+    width: calc(100% / 3 - 20px);
+    float: left;
+    box-shadow: 0 0 2px 2px rgba(0,0,0,.05);
+    background: var(--plight);
+  }
+  .card-container .card:hover {
+    box-shadow: 0 0 8px 3px rgba(0,0,0,.15);
+    transform: scale(1.025);
+    opacity: 1;
+    filter: grayscale(0);
+    transition: .35s all ease;
+  }
+  .card-container .card .content {
+    padding: 15px 20px;
+  }
+  .card-container .card h3 {
+    font: 2.8rem/3.4rem 'Bree Serif', serif;
+    margin: 0 0 10px;
+    letter-spacing: -.075rem
+  }
+  .card-container .card p {
+    color: var(--font);
+    margin: 0;
+    font: 400 1.6rem/2.2rem 'Open Sans script=all', sans-serif;
+  }
+  .position {
+    color: var(--slimedark);
+    background: var(--pdark);
+  }
+  .card-header {
+    color: var(--bluedark)
+  }
